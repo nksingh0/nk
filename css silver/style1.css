@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@200&family=Signika+Negative:wght@300&display=swap');
+*
+{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+    scroll-behavior: smooth;
+    
+}
+body
+{
+    overflow-x: hidden;
+    background: linear-gradient(#0d3a5f,#857a7a);
+    min-height: 100vh;
+}
+#header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Patrick Hand', cursive;
+    z-index: 10000;
+}
+.logo
+{
+    color: #fffffffa;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+#header ul li a
+{
+    padding: 6px 15px;
+    color: #fffffffa;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #fffffffa;
+    color: #0d3a5f;
+}
+section::before
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#082741,transparent);
+  z-index: 1000;
+}
+section
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+#moon
+{
+  mix-blend-mode: screen;
+}
+#text
+{
+  position: absolute;
+  color: #fffffffa;
+  white-space: nowrap;
+  font-size: 8vw;
+  z-index: 9;
+}
+.btn
+{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fffffffa;
+  color: #0d3a5f;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+}
+.sec
+{
+  position: relative;
+  padding: 100px;
+  background: #082741;
+}
+.sec h2
+{
+  font-size: 3.5em;
+  color: #fffffffa;
+  margin-bottom: 10px;
+}
+.sec p
+{
+  font-size: 1em;
+  color: #fffffffa;
+}
